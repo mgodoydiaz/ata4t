@@ -1,0 +1,13 @@
+# Local files
+credentials.json
+
+# Python assosiated files
+__pycache__/
+
+# Git files
+.git
+
+# Python testing files
+coverage.xml
+.coverage
+.pytest_cache/
