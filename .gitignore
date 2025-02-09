@@ -3,7 +3,7 @@ credentials.json
 
 # Python assosiated files
 __pycache__/
-
+.ipynb_checkpoints/
 # Git files
 .git
 
@@ -11,3 +11,6 @@ __pycache__/
 coverage.xml
 .coverage
 .pytest_cache/
+
+# egg-info
+*.egg-info/

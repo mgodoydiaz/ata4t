@@ -20,4 +20,5 @@ pip:
   - mplfinance
   - pytest
   - pytest-cov
+  - flake8
 

@@ -10,7 +10,7 @@ def login(userId, password):
 
     login_response = client.execute(loginCommand(userId=userId, password=password))
     if not login_response.get('status'):
-        raise(Exception("Login failed:", login_response.get('errorCode')))
+        raise(Exception("Login failed:", login_response.get('errorCode'), '\nDescription:', login_response.get('errorDescr')))
     return client, login_response.get('streamSessionId')
 
 if __name__ == '__main__':

@@ -11,7 +11,8 @@ DEBUG = True
 #default connection properites
 DEFAULT_XAPI_ADDRESS        = 'xapi.xtb.com'
 DEFAULT_XAPI_PORT           = 5124
-DEFUALT_XAPI_STREAMING_PORT = 5125
+DEFAULT_XAPI_STREAMING_PORT = 5125
+
 
 # wrapper name and version
 WRAPPER_NAME    = 'python'
@@ -172,7 +173,7 @@ class APIClient(JsonSocket):
         return self.execute(baseCommand(commandName, arguments))
 
 class APIStreamClient(JsonSocket):
-    def __init__(self, address=DEFAULT_XAPI_ADDRESS, port=DEFUALT_XAPI_STREAMING_PORT, encrypt=True, ssId=None, 
+    def __init__(self, address=DEFAULT_XAPI_ADDRESS, port=DEFAULT_XAPI_STREAMING_PORT, encrypt=True, ssId=None, 
                  tickFun=None, tradeFun=None, balanceFun=None, tradeStatusFun=None, profitFun=None, newsFun=None):
         super(APIStreamClient, self).__init__(address, port, encrypt)
         self._ssId = ssId
