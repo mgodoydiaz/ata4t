@@ -1,0 +1,23 @@
+name: ata4t
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ta-lib
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyter
+  - pip
+  - scipy
+  - statsmodels
+  - versioneer
+pip:
+  - yfinance
+  - mplfinance
+  - pytest
+  - pytest-cov
+
